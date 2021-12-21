@@ -6,6 +6,7 @@
 	goTop();
 	burger_menu();
 	main_title();
+	head_side_sns();
 	setTimeout(function(){
 		swiper_nft();
 	},300);
@@ -60,13 +61,16 @@
 
 
 	function burger_menu(){
-		
+
+
 		function device_size() {
 			if (window.innerWidth > 992) {
 				$(".gnb").removeClass("mobile_gnb");
+				$(".gnb").addClass("pc_gnb");
 				closeMenu();
 			} else {
 				$(".gnb").addClass("mobile_gnb");
+				$(".gnb").removeClass("pc_gnb");
 				
 			}
 		}
@@ -133,6 +137,12 @@
 			}, 150);
 		}
 
+	}
+
+	function head_side_sns(){
+		$(".head_side_sns > a").on('click',function(){
+			$(this).next("ul").slideToggle();
+		});
 	}
 
 

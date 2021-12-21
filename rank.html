@@ -1,0 +1,42 @@
+
+<div class="container">
+	<button class="pop_close" data-dismiss="modal"><img src="_img/pop_close.png" width="30px" alt=""></button>
+	<h3>
+		Check Your Avatar Rank
+		<small>The Meta Kongz Globalization NFT</small>
+		<small><a href="_file/point_table.pdf">Meta Kongz Point Table</a></small>
+	</h3>
+
+	<div class="rank_search">
+		<div class="thum">
+			<img id="kongz_image" src="_img/rank_none_img.png" class="wp100" style="max-width:360px" alt="">
+		</div>
+		<div class="kongz_info">
+			<form action="" id="kongz_form" >
+				<h4>My Meta Kongz No.</h4>
+				<div class="number_form"><input id="kongz_id" type="text" placeholder="Insert yout number"><button><i class="xi-search"></i></button></div>
+			</form>
+
+			<h4 class="t2">Ranking</h4>
+			<div class="point_box">
+				<input id="kongz_ranking_int" type="text" readonly  value="-" />
+			</div>
+
+			<h4 class="t2">Score</h4>
+			<div class="point_box">
+        <input id="kongz_point_float" type="text" readonly value="-" />
+      </div>
+		</div>
+	</div>	
+</div>
+<script src="../_js/ranking.js"></script>
+<script>
+  $("#kongz_form").submit(function(event){
+    var kongz_id = $("#kongz_id").val();
+    var my_kongz_url = "https://themetakongz.com/kongz/images/" + kongz_id + ".png";
+    $("#kongz_image").attr("src", my_kongz_url);
+    $("#kongz_ranking_int").val(ranking[kongz_id][1]);
+    $("#kongz_point_float").val(ranking[kongz_id][0]);
+    return false;
+  });
+</script>

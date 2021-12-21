@@ -181,6 +181,23 @@
        url('./_fonts/poppins-v15-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
        url('./_fonts/poppins-v15-latin-900.svg#Poppins') format('svg'); /* Legacy iOS */
 }
+
+
+/* alfa-slab-one-regular - latin */
+@font-face {
+  font-family: 'Alfa Slab One';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./_fonts/alfa-slab-one-v10-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./_fonts/alfa-slab-one-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./_fonts/alfa-slab-one-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./_fonts/alfa-slab-one-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('./_fonts/alfa-slab-one-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./_fonts/alfa-slab-one-v10-latin-regular.svg#AlfaSlabOne') format('svg'); /* Legacy iOS */
+}
+
+
 html{font-size:10px;}
 body{
 	font-family:'Noto Sans KR' , sans-serif;
@@ -192,6 +209,9 @@ body{
 .eng,
 .poppins{
 	font-family:'Poppins' , sans-serif !important;
+}
+.eng2{
+	font-family:'Alfa Slab One' , sans-serif !important;
 }
 .kor,
 .notosnaskr{

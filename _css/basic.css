@@ -403,3 +403,12 @@ div.circle.expand{
 
 
 .wp100{width:100%;}
+.clearfix::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.list-unstyled{
+	list-style:none;
+	padding-left:0;
+}

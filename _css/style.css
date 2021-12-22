@@ -71,6 +71,9 @@
 	padding-left:2rem;
 	_display:none;
 }
+#header .head_side_lan a{
+	color:#bbb
+}
 #header .head_side_lan a:last-child{
 	margin-left:1.5rem;
 }
@@ -108,8 +111,10 @@
 	line-height:6rem;
 	padding:0px 3rem;
 	transition:all .3s ease-in-out;
+	text-decoration:none;
 }
-#header > nav > ul > li.active > a{
+#header > nav > ul > li.active > a,
+#header > nav > ul > li:hover > a{
 	color:#1fc7d4;
 }
 #header > nav > ul > li > a.rank{
@@ -352,10 +357,12 @@
 
 
 /*footer*/
+
 #footer{
 	background:#0e1520;
 	padding:0px 5rem;
 }
+
 #footer > .inner{
 	display:flex;
 	justify-content:space-between;
@@ -1191,6 +1198,11 @@
 	text-decoration:none;
 	margin:0px 10px;
 }
+.globalWrap #main_container > section#sec_roadmap .detail_roadmap a{
+	width:32rem;
+	padding:1.8rem 0;
+	font-size:1.8rem;
+}
 
 #main_container > section#sec_roadmap .detail_roadmap a:hover{
 	background: rgb(3,66,115);
@@ -1343,6 +1355,7 @@
 	word-break: keep-all;
 }
 #roadmap_pop .schedule_detail > div > .box .inner ul li br{display:none;}
+#roadmap_pop .schedule_detail > div > .box .inner ul li br.on{display:block;}
 #roadmap_pop .schedule_detail > div > .box .inner ul li::after{
 	content:"-";
 	left:0;
@@ -1399,6 +1412,7 @@
 	#roadmap_pop .schedule_detail > div{padding:0; padding-top:2rem;}
 	#roadmap_pop .schedule_detail > div > .box .inner{padding:3.5rem;}
 	#roadmap_pop .schedule_detail > div > .box .inner ul li br{display:block;}
+	#roadmap_pop .schedule_detail > div > .box .inner ul li br.on{display:none;}
 }
 
 

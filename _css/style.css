@@ -154,12 +154,12 @@
 
 #header>nav>ul>li>a {
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-family: 'Poppins', sans-serif !important;
     display: block;
     height: 6rem;
     line-height: 6rem;
-    padding: 0px 3rem;
+    padding: 0px 2.6rem;
     transition: all .3s ease-in-out;
     text-decoration: none;
 }
@@ -188,15 +188,16 @@
     position: absolute;
     left: 50%;
     margin-top: -1px;
-    margin-left: -7.5rem;
-    width: 15rem;
+    margin-left: -8rem;
+    width: 16rem;
     list-style: none;
     padding: 0;
     border: 1px solid #136975;
     background: #15151e;
     border-radius: 2rem;
-    padding: 2rem 2.5rem;
+    padding: 2rem 1.5rem;
     display: none;
+    text-align: center;
 }
 
 #header>nav.pc_gnb>ul>li:hover>ul {
@@ -206,7 +207,8 @@
 #header>nav>ul>li>ul::after {
     content: "";
     position: absolute;
-    left: 30px;
+    left: 50%;
+    margin-left: -6px;
     top: -7px;
     width: 12px;
     height: 12px;
@@ -222,7 +224,7 @@
     color: #ffffff;
     font-family: 'Poppins', sans-serif !important;
     font-weight: 300;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 @media(max-width:1680px) {
@@ -240,6 +242,9 @@
 @media(max-width:1199.98px) {
     #header h1 {
         left: 3rem;
+    }
+    #header h1 img {
+        width: 160px;
     }
     #header>nav>ul>li>a {
         padding: 0px 1rem;
@@ -271,9 +276,6 @@
     #header {
         height: 8rem;
     }
-    #header h1 img {
-        width: 180px;
-    }
     #header>nav {
         position: fixed;
         left: 0;
@@ -292,7 +294,7 @@
     #header>nav,
     #header>nav>ul {
         flex-wrap: wrap;
-        padding: 5rem 2rem;
+        padding: 3rem 2rem 5rem 2rem;
     }
     #header>nav>ul>li {
         width: 100%;
@@ -361,9 +363,9 @@
     }
     #header .head_side_sns {
         position: fixed;
-        right: 0;
+        right: 0 !important;
         top: auto;
-        bottom: 5%;
+        bottom: 3%;
         text-align: center;
         width: 100%;
         justify-content: center;
@@ -375,6 +377,10 @@
     #header .head_side_bugger {
         display: block;
         right: 3rem;
+    }
+    #header .head_side_lan a.lan_kr {
+        font-size: 2rem;
+        transform: translatey(1px)
     }
     #header .head_side_lan a:last-child {
         margin-left: 2.5rem;

@@ -81,9 +81,13 @@
         });
         device_size();
 
-        $(document).on("click", ".mobile_gnb > ul > li > a", function() {
-            console.log("1");
+        $(document).on("click", ".mobile_gnb > ul > li > a.spy", function() {
             closeMenu();
+        });
+        $(document).on("click", ".mobile_gnb > ul > li > a", function() {
+            if ($(this).next("ul").length > 0) {
+                $(this).next("ul").slideToggle();
+            }
         });
 
 

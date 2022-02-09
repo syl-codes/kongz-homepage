@@ -703,6 +703,24 @@
     margin-bottom: 4rem;
 }
 
+.mck_wrap .mck_guide .white_paper {
+    margin-bottom: 4rem;
+}
+
+.mck_wrap .mck_guide .white_paper a {
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: .5rem;
+    background: url(../_img/comm/icon_mkc_small.png) no-repeat 2rem center / 2.5rem auto;
+    padding: 1.5rem 1.5rem 1.5rem 5rem;
+    color: #dfdfdf;
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-decoration: none;
+    width: 20rem;
+    margin: 0px 1rem;
+}
+
 .mck_wrap .mck_guide .desc {
     font-size: 1.6rem;
     line-height: 1.8;
@@ -947,6 +965,13 @@
         font-size: 3rem;
         margin-bottom: 3rem;
     }
+    .mck_wrap .mck_guide .white_paper {
+        margin-bottom: 2.5rem;
+    }
+    .mck_wrap .mck_guide .white_paper a {
+        width: 20rem;
+        margin: .5rem .5rem;
+    }
     .mck_wrap .mck_guide .desc br {
         display: none;
     }
@@ -985,5 +1010,6 @@
     .mck_wrap .mkc_nft_list .mkc_list ul>li>div:nth-child(3)::before {
         margin-right: 0;
         margin-bottom: .5rem;
+        display: block;
     }
 }

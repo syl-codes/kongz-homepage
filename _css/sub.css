@@ -1013,3 +1013,114 @@
         display: block;
     }
 }
+
+
+/*partner*/
+#sub_container.partner_wrap{
+	background:#131313  url(../_img/sub/partner_wrap_bg.jpg) no-repeat center center / cover;
+}
+#sub_container.partner_wrap h3{
+	text-align:center;
+	padding-top:14rem;
+}
+#sub_container.partner_wrap h3 img{
+	width: 100%;
+    max-width: 54.9rem;
+}
+#sub_container.partner_wrap h3 + p{
+	font-size:1.8rem;
+	color:#fff;
+	text-align:center;
+	font-weight:300;
+	margin-top:.5rem;
+	margin-bottom:8rem;
+}
+#sub_container.partner_wrap section{
+	background:rgba(0,0,0,.7);
+	padding:4rem 5.5rem;
+	border-radius:25px;
+}
+#sub_container.partner_wrap section.sec_project{
+	margin-top:5rem;
+}
+#sub_container.partner_wrap section h4{
+	color:#1fc7d4;
+	font-size:2.8rem;
+	color:#1fc7d4;
+	margin-bottom:2rem;
+}
+
+#sub_container.partner_wrap section.sec_partner 
+
+#sub_container.partner_wrap section.sec_partner  .partner_list{
+    margin-top: 7rem;
+    overflow: hidden;
+}
+#sub_container.partner_wrap section.sec_partner  .partner_list > ul{
+	list-style:none;
+	padding:0;
+	display:flex;
+	flex-wrap:wrap;
+	border-top:1px solid rgba(255,255,255,.1);
+}
+#sub_container.partner_wrap section.sec_partner  .partner_list > ul > li{
+	width:calc(100%/5);
+	padding:1.5rem 5px;
+	border-bottom:1px solid rgba(255,255,255,.1);
+	border-right:1px solid rgba(255,255,255,.1);
+}
+
+#sub_container.partner_wrap section.sec_partner  .partner_list > ul > li img{
+	max-width:200px;
+	width:100%;
+}
+
+
+#sub_container.partner_wrap section.sec_project h4{
+	border-bottom:1px solid rgba(255,255,255,.1);
+	padding-bottom:2rem;
+}
+#sub_container.partner_wrap section.sec_project  .project_list > ul{
+	list-style:none;
+	padding:0;
+	display:flex;
+	flex-wrap:wrap;
+}
+#sub_container.partner_wrap section.sec_project  .project_list > ul > li{
+	width:calc(100%/7);
+	padding:1rem .5rem
+}
+#sub_container.partner_wrap section.sec_project  .project_list > ul > li img{
+	width:100%;
+	max-width:17rem;
+}
+
+
+@media(min-width:768px){
+	#sub_container.partner_wrap section.sec_partner  .partner_list > ul > li:nth-child(5n){
+		border-right:0;
+	}
+}
+
+@media(max-width:767.98px) {
+	 #sub_container.partner_wrap h3{
+	    padding-top: 8rem;
+	}
+	#sub_container.partner_wrap h3 + p {
+		margin-bottom: 5rem;
+	}
+	#sub_container.partner_wrap section{
+		padding:2.5rem 3.5rem;
+	}
+	#sub_container.partner_wrap section.sec_partner  .partner_list > ul > li{
+		width:calc(100%/3);
+	}
+	#sub_container.partner_wrap section.sec_partner  .partner_list > ul > li:nth-child(3n){
+		border-right:0;
+	}
+	#sub_container.partner_wrap section.sec_project  .project_list > ul > li{
+		width:calc(100%/4);
+		padding:1rem .5rem
+	}
+}
+

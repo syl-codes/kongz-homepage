@@ -73,13 +73,20 @@
             } else {
                 $(".gnb").addClass("mobile_gnb");
                 $(".gnb").removeClass("pc_gnb");
-
+                $(".side_link > ul").slideDown();
+                setTimeout(function() {
+                    $(".side_link > ul").slideUp();
+                }, 1000);
             }
         }
         $(window).resize(function() {
             device_size();
         });
         device_size();
+
+        $(".m_side_link_view").on("click", function() {
+            $(".side_link > ul").slideToggle();
+        });
 
         $(document).on("click", ".mobile_gnb > ul > li > a.spy", function() {
             closeMenu();

@@ -421,7 +421,7 @@
     font-size: 1.4rem;
     color: #a9a9a9;
     font-family: 'Poppins', sans-serif !important;
-    text-align: center;
+    text-align: left;
 }
 
 #footer>.inner>div:nth-child(2)>div:nth-child(1) {
@@ -432,6 +432,10 @@
     display: inline-block;
     position: relative;
     padding: 0px 6px;
+}
+
+#footer>.inner>div:nth-child(2)>div:nth-child(1)>p:first-child {
+    padding-left: 0;
 }
 
 #footer>.inner>div:nth-child(2)>div:nth-child(1)>p+p::after {
@@ -458,16 +462,22 @@
     display: inline-block;
     border: 1px solid rgba(255, 255, 255, .2);
     border-radius: .5rem;
-    background: url(../_img/comm/icon_mkc_small.png) no-repeat 2rem center / 2.5rem auto;
-    padding: 1.5rem 1.5rem 1.5rem 5rem;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
     color: #dfdfdf;
     font-size: 1.4rem;
     font-weight: 300;
     text-decoration: none;
     width: 20rem;
+    text-align: center;
 }
 
-#footer>.inner>div:nth-child(3) a:hover {
+#footer>.inner>div:nth-child(3) a.mkc {
+    background: url(../_img/comm/icon_mkc_small.png) no-repeat 2rem center / 2.5rem auto;
+    padding: 1.5rem 1.5rem 1.5rem 5rem;
+    text-align: left;
+}
+
+#footer>.inner>div:nth-child(3) a.mkc:hover {
     background: rgba(255, 255, 255, .2) url(../_img/comm/icon_mkc_small.png) no-repeat 2rem center / 2.5rem auto;
 }
 
@@ -569,6 +579,7 @@ aside.side_link>ul>li>a span {
     }
     #footer>.inner>div:nth-child(2) {
         order: 2;
+        text-align: center;
     }
     #footer>.inner>div:nth-child(2)>div:nth-child(1)>p {
         padding: 2px 3px;

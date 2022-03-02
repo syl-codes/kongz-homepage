@@ -403,7 +403,7 @@
 
 #footer {
     background: #0e1520;
-    padding: 0px 5rem;
+    padding: 3rem 5rem;
 }
 
 #footer>.inner {
@@ -479,6 +479,9 @@
 
 #footer>.inner>div:nth-child(3) a.mkc:hover {
     background: rgba(255, 255, 255, .2) url(../_img/comm/icon_mkc_small.png) no-repeat 2rem center / 2.5rem auto;
+}
+#footer .f_link_btn > p +p{
+    margin-top:1rem
 }
 
 aside.side_link {
@@ -2725,4 +2728,39 @@ aside.side_link>ul>li>a span {
         width: 100%;
         max-width: 360px;
     }
+}
+
+
+/*거래약관*/
+#agree_en .modal-content,
+#agree_kr .modal-content{
+    max-width:120rem;
+    width:100%;
+    margin:0 auto;
+    padding:0rem;
+    background:#1a1617;
+    margin:4rem auto;
+}
+#agree_en .modal_close_btn,
+#agree_kr .modal_close_btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 3.4rem;
+    color: rgba(255, 255, 255, .7);
+    border: 0;
+    background: none;
+}
+
+#agree_kr .modal_content_wrap,
+#agree_en .modal_content_wrap {
+    position: relative;
+    padding:3rem 3rem
+}
+
+.modal_content_wrap .agree_modal {
+    color: #999;
+    font-size: 1.5rem;
+    white-space: pre-line;
+    line-height: 1.8
 }

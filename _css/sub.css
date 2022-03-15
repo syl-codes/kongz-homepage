@@ -1,8 +1,10 @@
 #subVisual {
-  background: #030412 url(../_img/sub/sub_visual_bg.jpg) no-repeat center center /
-    cover;
+  background: #030412 url(../_img/sub/sub_visual_bg.jpg) no-repeat center center / cover;
   height: 40rem;
   position: relative;
+}
+#subVisual.breeding{
+  background: #030412 url(../_img/sub/sub_visual_bg2.jpg) no-repeat center center / cover;
 }
 
 #subVisual > .sv_text {
@@ -728,7 +730,8 @@
   margin-top: 4rem;
 }
 
-.mck_wrap .mck_guide .wallet > button {
+.mck_wrap .mck_guide .wallet > button,
+.mck_wrap .mck_guide .wallet > a {
   display: inline-block;
   border-radius: 5px;
   background: #575757;
@@ -739,6 +742,9 @@
   font-size: 1.6rem;
   border: 0;
   outline: none;
+  min-width:21rem;
+  margin:0 .5rem;
+  text-decoration: none;
 }
 
 .mck_wrap .mck_guide .wallet > button > span {
@@ -749,7 +755,9 @@
 }
 
 .mck_wrap .mck_guide .wallet > button.on,
-.mck_wrap .mck_guide .wallet > button:hover {
+.mck_wrap .mck_guide .wallet > a.on,
+.mck_wrap .mck_guide .wallet > button:hover,
+.mck_wrap .mck_guide .wallet > a:hover {
   background: rgb(2, 121, 79);
   background: -moz-linear-gradient(
     120deg,
@@ -767,8 +775,35 @@
     rgba(3, 66, 115, 1) 100%
   );
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#02794f", endColorstr="#034273", GradientType=1);
+  
 }
 
+.mck_wrap .mck_guide .my_mkc{
+  margin-top:4rem;
+  font-size: 2.2rem;
+  color: #21a2ae;
+  font-family: "Poppins";
+  font-weight:500;
+} 
+.mck_wrap .mck_guide .my_mkc > span{
+  display:inline-block;
+  padding-left:3.7rem;
+  position:relative;
+  margin-left:1rem;
+  font-weight:600;
+  color:#fff;
+}
+.mck_wrap .mck_guide .my_mkc > span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: -1px;
+  background: url(../_img/comm/icon_mkc_small.png) no-repeat left center / 3rem auto;
+  width: 3rem;
+  height: 3rem;
+  }
 .mck_wrap .mkc_nft_list {
 }
 
@@ -1188,5 +1223,402 @@
   #sub_container.partner_wrap section.sec_project .project_list > ul > li {
     width: calc(100% / 4);
     padding: 1rem 0.5rem;
+  }
+}
+
+
+
+/*브리딩*/
+.breeding_wrap{
+  padding-bottom:0 !important;
+}
+.breeding_wrap .mck_guide{
+  margin-bottom:0;
+  padding-bottom:6rem;
+}
+.breeding_wrap .approve{
+  text-align:center;
+  background:#14131d;
+  border-top:1px solid rgba(255,255,255,.1);
+  margin-left:-1rem;
+  margin-right:-1rem;
+  padding:10rem 0;
+}
+.breeding_wrap .approve button{
+  background:#2db9c5;
+  color:#fff;
+  font-size:1.6rem;
+  padding:1.8rem 2rem;
+  width:26rem;
+  border:0;
+  border-radius:.6rem;
+}
+.breeding_wrap .approve  p{
+  font-size:1.6rem;
+  color:#f2fbfc;
+  margin-top:2rem;
+  font-weight:300;
+}
+
+.breeding_wrap .breeding_app{
+  margin-top:15rem;
+}
+.breeding_wrap .breeding_app > ul{
+  list-style:none;
+  padding:0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.breeding_wrap .breeding_app > ul > li{
+  position:relative;
+}
+.breeding_wrap .breeding_app > ul > li > p.thum{
+  width:40rem;
+  padding-top:100%;
+}
+.breeding_wrap .breeding_app > ul > li.plus{
+  width:14rem;
+}
+.breeding_wrap .breeding_app > ul > li.plus::after,
+.breeding_wrap .breeding_app > ul > li.plus::before{
+  content:"";
+  position:absolute;
+  width:6rem;
+  left:50%;
+  top:50%;
+  height:.8rem;
+  background:#7f7f7f;
+  transform:translate(-50%,-50%);
+  border-radius:2rem;
+}
+.breeding_wrap .breeding_app > ul > li.plus::before{
+  transform:translate(-50%,-50%) rotate(90deg);
+}
+.breeding_wrap .breeding_app > ul > li .thum{
+  background-size:cover !important;
+  background-position:center center !important;
+  border-radius:3rem;
+}
+.breeding_wrap .breeding_app > ul > li > p:nth-child(2){
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:100%;
+  text-align:center;
+  transform:translateY(50%);
+}
+.breeding_wrap .breeding_app > ul > li > p:nth-child(2) a{
+  background:#fff;
+  border:1px solid #000;
+  outline: none;
+  font-size:1.8rem;
+  width:20rem;
+  padding:1rem;
+  border-radius:5rem;
+  display:inline-block;
+  color:#000;
+  text-decoration:none;
+}
+.breeding_wrap .breeding_app > ul > li > p:nth-child(2) a.on{
+  background:#2db9c5;
+  color:#fff;
+  border:1px solid #2db9c5;
+}
+.breeding_wrap .breeding_app .breeding_btn{
+  text-align:center;
+  margin-top:7rem;
+}
+.breeding_wrap .breeding_app .breeding_btn button{
+  background: rgb(45,165,122);
+  background: -moz-linear-gradient(150deg, rgba(45,165,122,1) 20%, rgba(46,109,159,1) 80%);
+  background: -webkit-linear-gradient(150deg, rgba(45,165,122,1) 20%, rgba(46,109,159,1) 80%);
+  background: linear-gradient(150deg, rgba(45,165,122,1) 20%, rgba(46,109,159,1) 80%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2da57a",endColorstr="#2e6d9f",GradientType=1);
+  color:#fff;
+  border:0;
+  outline: none;
+  font-size:1.8rem;
+  font-family: "Poppins";
+  border-radius:1.5rem;
+  padding:2rem;
+  width:30rem
+}
+.breeding_wrap .breeding_app .breeding_btn button strong{
+  display:block;
+  font-weight:600;
+  font-size:2.8rem;
+  
+}
+
+.breeding_wrap .baby_kongz_list{
+  background:#f7f7f7;
+  padding:12rem 0;
+  margin-top:12rem;
+  text-align:center;
+}
+.breeding_wrap .baby_kongz_list h4{
+  font-size:4rem;
+  font-family: "Alfa Slab One", sans-serif;
+  color:#000;
+}
+.breeding_wrap .baby_kongz_list ul{
+  list-style:none;
+  padding:0;
+  display:flex;
+  margin-left:-2.5rem;
+  margin-right:-2.5rem;
+  flex-wrap: wrap;
+}
+.breeding_wrap .baby_kongz_list ul > li{
+  width:calc(100%/4);
+  padding:0px 2.5rem;
+  margin-top:5rem;
+}
+.breeding_wrap .baby_kongz_list ul > li figure{}
+.breeding_wrap .baby_kongz_list ul > li figure > p:first-child{
+  padding-top:100%;
+  background:url(../_img/sub/@baby_incubator.png);
+  background-size:cover !important;
+  background-position: center center !important;
+  border-radius:2rem;
+}
+.breeding_wrap .baby_kongz_list ul > li figure > figcaption{
+  padding:1.5rem 0;
+}
+.breeding_wrap .baby_kongz_list ul > li button{
+  border:1px solid #bbb;
+  border-radius:1rem;
+  padding:1.1rem 0 1.4rem 0;
+  width:100%;
+  background:none;
+  outline: none;;
+}
+.breeding_wrap .baby_kongz_list ul > li button span{
+  color:#50afb9
+}
+
+@media(max-width:767.98px){
+  .breeding_wrap .approve{
+    padding:6rem 0;
+  }
+  .breeding_wrap .breeding_app{
+    margin-top:10rem;
+  }
+  .breeding_wrap .breeding_app > ul > li > p.thum{
+    width:30rem;
+  }
+  .breeding_wrap .baby_kongz_list{
+    padding-top:8rem;
+    margin-top:8rem;
+  }
+  .breeding_wrap .baby_kongz_list ul{
+    margin-left:-1rem;
+    margin-right:-1rem;
+  }
+  .breeding_wrap .baby_kongz_list ul > li{
+    padding: 0px 1rem;
+    width:calc(100%/3)
+  }
+}
+@media(max-width:576.98px){
+  .breeding_wrap .breeding_app > ul > li > p.thum{
+    width:20rem;
+  }
+  .breeding_wrap .baby_kongz_list ul > li{
+    width:calc(100%/2);
+    margin-top:4rem;
+  }
+  .breeding_wrap .breeding_app > ul > li.plus{
+    width:10rem;
+  }
+  .breeding_wrap .breeding_app > ul > li.plus::after,
+  .breeding_wrap .breeding_app > ul > li.plus::before{
+    width:4rem;
+    height:.5rem;
+  }
+  .breeding_wrap .breeding_app .breeding_btn button {
+    font-size: 1.6rem;
+    padding: 1.5rem;
+    width: 30rem;
+}
+  .breeding_wrap .breeding_app .breeding_btn button strong{
+    font-size:2.2rem;
+  }
+  .breeding_wrap .baby_kongz_list {
+      padding: 10rem 1rem;
+      margin-top: 10rem;
+      margin-left:-1rem;
+      margin-right:-1rem;
+  }
+  .breeding_wrap .baby_kongz_list h4{
+    font-size:3.2rem;
+  }
+}
+
+/*브리딩 팝업*/
+.breeding_choice_pop{}
+.breeding_choice_pop .modal-dialog{
+  margin:1rem auto;
+}
+.breeding_choice_pop .breeding_kongz_list{
+  max-height:60vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding-right:10px;
+}
+.breeding_choice_pop .breeding_kongz_list::-webkit-scrollbar {
+  width: 8px; /*스크롤바의 너비*/
+}
+
+.breeding_choice_pop .breeding_kongz_list::-webkit-scrollbar-thumb {
+  background-color: #494b56; /*스크롤바의 색상*/
+  border-radius:10px;
+}
+
+.breeding_choice_pop .breeding_kongz_list::-webkit-scrollbar-track {
+  background-color:none /*스크롤바 트랙 색상*/
+}
+
+
+.breeding_choice_pop .breeding_kongz_list ul{
+  list-style:none;
+  padding:0;
+  display:flex;
+  margin-left:-1.5rem;
+  margin-right:-1.5rem;
+  flex-wrap: wrap;
+}
+.breeding_choice_pop .breeding_kongz_list ul > li{
+  width:calc(100%/3);
+  padding:0px 1.5rem;
+  margin-bottom:2.5rem;
+}
+.breeding_choice_pop .breeding_kongz_list ul > li > .thum{
+  position:relative;
+  padding-top:100%;
+  background-size:cover !important;
+  background-position: center center !important;
+  border-radius:2rem;
+  overflow: hidden;
+}
+.breeding_choice_pop .breeding_kongz_list ul > li > .thum .time{
+  position:absolute;
+  top:50%;
+  left:0;
+  transform: translatey(-50%);
+  text-align:center;
+  width:100%;
+  z-index:2;
+  font-family:"Poppins";
+  font-size:1.8rem;
+  font-weight:300;
+}
+.breeding_choice_pop .breeding_kongz_list ul > li > .thum .time span{
+  display:block;
+  color:#2db9c5;
+  font-weight:400;
+}
+.breeding_choice_pop .breeding_kongz_list ul > li > .thum.sleep::after{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,.6)
+}
+.breeding_choice_pop .breeding_kongz_list ul > li > .thum .choice,
+.breeding_choice_pop .breeding_kongz_list ul > li > .thum .choice > label{
+  position:absolute;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  left:0;
+  top:0;
+}
+.breeding_choice_pop .breeding_kongz_list ul > li > .thum .choice input{
+  position:absolute;
+  z-index:-1;
+  opacity:0;
+}
+.breeding_choice_pop .breeding_kongz_list ul > li > .thum .choice > label {
+  cursor: pointer;
+  z-index:2;
+}
+.breeding_choice_pop .breeding_kongz_list ul > li > .thum .choice > input:checked +label{}
+.breeding_choice_pop .breeding_kongz_list ul > li > .thum .choice > label::after,
+.breeding_choice_pop .breeding_kongz_list ul > li > .thum .choice > label::before{
+  content:"";
+  position:absolute;
+  left:1rem;
+  bottom:1rem;
+  border-radius:100%;
+}
+.breeding_choice_pop .breeding_kongz_list ul > li > .thum .choice > label::after{
+  z-index:1;
+  width:4rem;
+  height:4rem;
+  background:#fff;
+  border:2px solid #000;
+}
+.breeding_choice_pop .breeding_kongz_list ul > li > .thum .choice > input:checked + label::before{
+  z-index:2;
+  width:2.4rem;
+  height:2.4rem;
+  left:1.8rem;
+  bottom:1.8rem;
+  background: rgb(45,165,122);
+  background: -moz-linear-gradient(150deg, rgba(45,165,122,1) 20%, rgba(46,109,159,1) 80%);
+  background: -webkit-linear-gradient(150deg, rgba(45,165,122,1) 20%, rgba(46,109,159,1) 80%);
+  background: linear-gradient(150deg, rgba(45,165,122,1) 20%, rgba(46,109,159,1) 80%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2da57a",endColorstr="#2e6d9f",GradientType=1);
+}
+
+.breeding_choice_pop .breeding_kongz_list > ul > li > .num{
+  text-align:center;
+  color:#999;
+  font-family:"Poppins";
+  margin-top:1rem;
+}
+.breeding_choice_pop .choice_btn{
+  text-align:center;
+  padding-top:2rem;
+}
+.breeding_choice_pop .choice_btn button{
+  background: rgb(45,165,122);
+  background: -moz-linear-gradient(150deg, rgba(45,165,122,1) 20%, rgba(46,109,159,1) 80%);
+  background: -webkit-linear-gradient(150deg, rgba(45,165,122,1) 20%, rgba(46,109,159,1) 80%);
+  background: linear-gradient(150deg, rgba(45,165,122,1) 20%, rgba(46,109,159,1) 80%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2da57a",endColorstr="#2e6d9f",GradientType=1);
+  color:#fff;
+  font-size:1.6rem;
+  border:0;
+  padding:1.7rem;
+  border-radius:.8rem;
+  width:100%;
+  max-width:24rem;
+  outline: none;
+}
+@media(max-width:576.98px){
+  .breeding_choice_pop .modal-dialog .modal-content .container{
+    padding:4rem 1.5rem 4rem 2.5rem
+  }
+  .breeding_choice_pop .breeding_kongz_list ul > li {
+      width: calc(100%/2);
+      padding: 0px 1rem;
+      margin-bottom: 2.5rem;
+  }
+  .breeding_choice_pop .breeding_kongz_list::-webkit-scrollbar {
+    width: 4px; /*스크롤바의 너비*/
+  }
+  
+  .breeding_choice_pop .breeding_kongz_list::-webkit-scrollbar-thumb {
+    background-color: #494b56; /*스크롤바의 색상*/
+    border-radius:10px;
+  }
+  
+  .breeding_choice_pop .breeding_kongz_list::-webkit-scrollbar-track {
+    background-color:none /*스크롤바 트랙 색상*/
   }
 }

@@ -188,6 +188,19 @@ div.circle.expand{
 
 
 /*모달 팝업*/
+.fade {
+	transition: opacity 0.15s linear;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.fade {
+		transition: none;
+	}
+}
+
+.fade:not(.show) {
+	opacity: 0;
+}
 .modal-open {
   overflow: hidden;
 }

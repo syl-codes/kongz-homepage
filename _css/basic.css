@@ -425,3 +425,8 @@ div.circle.expand{
 	list-style:none;
 	padding-left:0;
 }
+@media(min-width:578px){
+	br.m{
+		display:none;
+	}
+}

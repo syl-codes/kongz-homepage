@@ -743,8 +743,13 @@
   border: 0;
   outline: none;
   min-width:21rem;
-  margin:0 .5rem;
+  margin:.5rem .5rem;
   text-decoration: none;
+}
+.mck_wrap .mck_guide .wallet > button.bdr,
+.mck_wrap .mck_guide .wallet > a.bdr{
+  box-shadow: 0 0 0 1px #0d7b59 inset; 
+  background:#242330
 }
 
 .mck_wrap .mck_guide .wallet > button > span {
@@ -1621,4 +1626,29 @@
   .breeding_choice_pop .breeding_kongz_list::-webkit-scrollbar-track {
     background-color:none /*스크롤바 트랙 색상*/
   }
+}
+
+
+/*baby_rarity_pop*/
+.baby_rarity_pop {padding-right:0 !important}
+.baby_rarity_pop .modal-content{
+  position:relative;
+  background: rgb(248,235,255);
+  background: -moz-linear-gradient(180deg, rgba(248,235,255,1) 76%, rgba(176,115,175,1) 90%, rgba(84,46,121,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(248,235,255,1) 76%, rgba(176,115,175,1) 90%, rgba(84,46,121,1) 100%);
+  background: linear-gradient(180deg, rgba(248,235,255,1) 76%, rgba(176,115,175,1) 90%, rgba(84,46,121,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8ebff",endColorstr="#542e79",GradientType=1);
+  text-align:center;
+}
+.baby_rarity_pop .modal-content img{
+  max-width:2200px;
+}
+.baby_rarity_pop .modal-content button.pop_close{
+  position:absolute;
+  right:0;
+  top:0;
+  border:0;
+  outline: none;
+  background:none;
+  font-size:5rem;
 }

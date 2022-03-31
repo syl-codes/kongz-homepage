@@ -1630,7 +1630,7 @@ aside.side_link>ul>li>a span {
 }
 
 #roadmap_pop .modal-content h3+.text p.t1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 500;
 }
 
@@ -1640,7 +1640,7 @@ aside.side_link>ul>li>a span {
 
 #roadmap_pop .modal-content h3+.text p.t2 {
     margin-top: 2rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 300;
 }
 
@@ -1654,17 +1654,77 @@ aside.side_link>ul>li>a span {
     font-size: 1.6rem;
     font-weight: 300;
 }
+#roadmap_pop .modal-content h3+.text p.t4 {
+    color: #00edff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top:3rem;
+}
+#roadmap_pop .modal-content h3+.text p.t5 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top:3rem;
+}
+
+#roadmap_pop  .schedule_tab{
+	padding:0 9rem;
+	position:relative;
+	z-index:12;
+	margin-bottom:2rem;
+}
+#roadmap_pop  .schedule_tab > div{
+	display:flex;
+	overflow:hidden;
+	border-radius:1rem;
+}
+#roadmap_pop  .schedule_tab > div > p{
+	width:calc(100%/2)
+}
+#roadmap_pop  .schedule_tab > div > p > button{
+	display:block;
+	width:100%;
+	background:#1a505f;
+	color:#fff;
+	border:0;
+	height:7rem;
+	font-size:2.2rem;
+	font-weight:300;
+	outline:none
+}
+#roadmap_pop  .schedule_tab > div > p.on > button{
+	background:#00b977
+}
+#roadmap_pop  .schedule_tab > div > p > button strong{
+	font-family:"Poppins";
+	font-weight:600;
+}
+
+
+
 
 #roadmap_pop .schedule_detail {
     display: flex;
     flex-wrap: wrap;
     padding: 0px 6rem;
+	display:none;
+}
+#roadmap_pop .schedule_detail.on{
+	display:flex;
 }
 
 #roadmap_pop .schedule_detail>div {
     width: 50%;
     padding: 2rem;
+	position:relative;
 }
+
+#roadmap_pop .schedule_detail>div.none_cont{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+
 
 #roadmap_pop .schedule_detail>div>.box {
     border: 7px solid transparent;

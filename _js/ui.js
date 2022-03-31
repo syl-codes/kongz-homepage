@@ -185,6 +185,7 @@
 
 
 
+
     $('body').scrollspy({ target: ".navbar", offset: 50 });
     $("#myNavbar a").on('click', function(event) {
         if (this.hash !== "") {

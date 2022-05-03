@@ -9,6 +9,7 @@
     main_title();
     head_side_sns();
     partner_swiper();
+    hyundai_pop();
     setTimeout(function() {
         swiper_nft();
     }, 300);
@@ -175,6 +176,12 @@
                     slidesPerView: 4,
                 },
             },
+        });
+    }
+
+    function hyundai_pop(){
+        $(".hyundai_video_pop .close_video").on("click",function(){
+            $(".hyundai_video_pop").remove();
         });
     }
 

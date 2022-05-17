@@ -545,6 +545,23 @@
 		</div>
 	</div>
 
+	<!-- 마이그레이션 타이머 -->
+	<div class="migration_pop">
+		<button class="close_pop"><i class="xi-close-thin"></i></button>
+		<div class="migration_container">
+			<div class="inner">
+				<p class="title"><img src="_img/migration_pop_title.png" alt=""></p>
+				<div class="counter_box">
+					<div id="timer"></div>
+					<div class="migration_go">
+						<a href="#.">MetaKongz <i class="xi-arrow-right"></i></a>
+						<a href="#.">BabyKongz <i class="xi-arrow-right"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- roadmap_pop -->
 	<div class="modal fade" id="universe_pop">
 		<div class="modal-dialog">
@@ -564,6 +581,47 @@
 	<link rel="stylesheet" href="_js/aos.css" />
 	<script src="_js/aos.js"></script>
 	<script src="_js/ui.js"></script>
+
+	<script>
+		function updateTimer() {
+			future  = Date.parse("May 21, 2022 22:00:00");
+			now     = new Date();
+			diff    = future - now;
+
+			days  = Math.floor( diff / (1000*60*60*24) );
+			hours = Math.floor( diff / (1000*60*60) );
+			mins  = Math.floor( diff / (1000*60) );
+			secs  = Math.floor( diff / 1000 );
+
+			d = days;
+			h = hours - days  * 24;
+			m = mins  - hours * 60;
+			s = secs  - mins  * 60;
+
+			
+
+			if(diff < 0){
+				document.getElementById("timer").style.display = "none";
+				document.querySelector(".migration_go").style.display = "block";
+			} else{
+				document.getElementById("timer")
+				.innerHTML =
+				'<div class="d"><strong>' + d + '</strong><span>days</span></div>' +
+				'<div class="h"><strong>' + h + '</strong><span>hours</span></div>' +
+				'<div class="m"><strong>' + m + '</strong><span>minutes</span></div>' +
+				'<div class="c"><strong>' + s + '</strong><span>seconds</span></div>' ;
+			}
+		}
+		setInterval('updateTimer()', 1000 );
+		(function(d) {
+		var config = {
+		kitId: 'oqh5gse',
+		scriptTimeout: 3000,
+		async: true
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+		})(document);
+	</script>
 
 
 

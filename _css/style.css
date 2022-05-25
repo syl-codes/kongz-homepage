@@ -1564,7 +1564,8 @@ aside.side_link>ul>li>a span {
 }
 
 #roadmap_pop,
-#universe_pop {
+#universe_pop,
+#whitepaper_pop {
 	padding-right: 0 !important
 }
 
@@ -1575,7 +1576,8 @@ aside.side_link>ul>li>a span {
 }
 
 #roadmap_pop .modal-content .modal_pop_close,
-#universe_pop .modal-content .modal_pop_close {
+#universe_pop .modal-content .modal_pop_close,
+#whitepaper_pop .modal-content .modal_pop_close {
 	position: absolute;
 	right: 1rem;
 	top: 1rem;
@@ -2373,56 +2375,60 @@ aside.side_link>ul>li>a span {
 }
 
 #sec_team .team_list>li:nth-child(1)>div {
-	background: url(../_img/team_avata1.png) no-repeat center center / cover;
+	background: url(../_img/team_face_kangmin.png) no-repeat center center / cover;
 }
 
 #sec_team .team_list>li:nth-child(2)>div {
-	background: url(../_img/team_avata2.png) no-repeat center center / cover;
+	background: url(../_img/team_face_doohee.png) no-repeat center center / cover;
 }
 
 #sec_team .team_list>li:nth-child(3)>div {
-	background: url(../_img/team_avata3.png) no-repeat center center / cover;
+	background: url(../_img/team_face_jinjun.png) no-repeat center center / cover;
 }
 
 #sec_team .team_list>li:nth-child(4)>div {
-	background: url(../_img/team_avata4.png) no-repeat center center / cover;
+	background: url(../_img/team_face_hyeongi.png) no-repeat center center / cover;
 }
 
 #sec_team .team_list>li:nth-child(5)>div {
-	background: url(../_img/team_avata5.png) no-repeat center center / cover;
+	background: url(../_img/team_face_doyeop.png) no-repeat center center / cover;
 }
 
-#sec_team .team_list>li>div>p {
+#sec_team .team_list>li>div>p:first-child {
 	position: absolute;
 	left: 0;
-	top: 10%;
+	bottom: 6%;
 	width: 100%;
 	font-family: "Poppins";
 }
 
-#sec_team .team_list>li>div>p:first-child {
-	height: 5rem;
+#sec_team .team_list>li>div>p:first-child strong{
+	font-weight:600;
+}
+
+#sec_team .team_list>li>div>p:first-child span {
+	display:block;
 	color: #1fc7d4;
 }
-
-#sec_team .team_list>li>div>p:first-child>span {
-	position: absolute;
-	left: 0;
-	width: 100%;
-	top: 50%;
-	transform: translatey(-50%);
+#sec_team .team_list>li>div>p.sns{
+	position:absolute;
+	width:100%;
+	left:0;
+	text-align:center;
+	bottom:-6rem;
 }
-
-#sec_team .team_list>li>div>p:last-child {
-	top: auto;
-	bottom: 15%;
-	font-size: 2rem;
-	line-height: 1.3;
-	font-weight: 300;
+#sec_team .team_list>li>div>p.sns a{
+	display:inline-block;
+	margin:0 3px;
+	background:#3b707d;
+	width:3.8rem;
+	height:3.8rem;
+	border-radius:100%;
+	position:Relative;
+	line-height:3.4rem;
 }
-
-#sec_team .team_list>li>div>p:last-child strong {
-	font-weight: 600;
+#sec_team .team_list>li>div>p.sns a img{
+	width:2.1rem;
 }
 
 #sec_team .icon_klay {
@@ -2512,7 +2518,11 @@ aside.side_link>ul>li>a span {
 	}
 	#sec_team .team_list>li {
 		width: 50%;
-		margin-top: 3rem;
+		margin-top: 10rem;
+	}
+	#sec_team .team_list>li:nth-child(1),
+	#sec_team .team_list>li:nth-child(2){
+		margin-top:3rem;
 	}
 	#sec_team .icon_klay {
 		position: absolute;

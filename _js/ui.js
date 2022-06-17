@@ -181,7 +181,7 @@
 
     function hyundai_pop(){
         $(".hyundai_video_pop .close_video").on("click",function(){
-            $(".hyundai_video_pop").remove();
+            $(this).parents(".hyundai_video_pop").remove();
         });
         $(".migration_pop .close_pop").on("click",function(){
             $(".migration_pop").hide();

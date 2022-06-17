@@ -2899,9 +2899,17 @@ aside.side_link>ul>li>a span {
 	font-size:3.6rem;
 	opacity:1;
 }
+
+#pop_video_boon.hyundai_video_pop{
+	top:465px;
+}
+
 @media(max-width:991.98px){
 	.hyundai_video_pop{
 		top:64px;
+	}
+	#pop_video_boon.hyundai_video_pop{
+		top:430px;
 	}
 }
 @media(max-width:767.98px){
@@ -2911,7 +2919,12 @@ aside.side_link>ul>li>a span {
 		transform: translateX(50%);
 		font-size:4.5rem;
 	}
+	#pop_video_boon.hyundai_video_pop{
+		top:48%;
+	}
 }
+
+
 
 
 /*마이그레이션*/
